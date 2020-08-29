@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Gojek Assignment" parallel="none">
-    <test name="Test">
+    <test name="Test" preserve-order="true">
         <classes>
-            <class name="com.test.Assignment" />
+            <class name="com.test.CheckoutWithValidCard" />
+            <class name="com.test.CheckoutWithInvalidCard" />
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.Constants;
 import utils.GenericUtils;
 
 public class PaymentMethodPage {
@@ -20,7 +21,7 @@ public class PaymentMethodPage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "//div[@class='list-title text-actionable-bold'][text()='Credit Card']")
+    @FindBy(xpath = "//div[@class='list-title text-actionable-bold'][text()='Credit/Debit Card']")
     WebElement CreditCard;
 
     @FindBy(xpath="//p[@class='text-page-title-content']")
@@ -104,6 +105,17 @@ public class PaymentMethodPage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean getInvalidCreditCardMsg()
+    {
+        utils.waitForElementPresent(invalidCardMsg);
+        String actualInvalMsg=invalidCardMsg.getText();
+        if(actualInvalMsg.equals(Constants.INVALID_TEXT)) {
+            return true;
+        }
+        else
+            return false;
     }
 
 }
