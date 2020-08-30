@@ -2,7 +2,7 @@ package utils;
 
 public class Constants {
 
-    public static final String BROWSER="chrome";
+    public static final String BROWSER="FIREFOX";
     public static final String URL="https://demo.midtrans.com/";
     public static final String VALID_CREDIT_CARD="4811111111111114";
     public static final String INVALID_CREDIT_CARD="4811111111111113";

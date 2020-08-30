@@ -28,6 +28,7 @@ public class CheckoutWithValidCard extends BaseClass {
     @Test
     public void checkoutWithValidCard()
     {
+        logger=report.createTest("checkoutWithValidCard");
         homePage.clickBuyBtn();
         shoppingCartPage.checkout();
         orderSummaryPage.clickContinueBtn();
