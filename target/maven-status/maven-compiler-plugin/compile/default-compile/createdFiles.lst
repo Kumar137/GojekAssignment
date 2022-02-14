@@ -1,0 +1,8 @@
+com/demo/pages/OrderSummaryPage.class
+com/demo/pages/ShoppingCartPage.class
+utils/ReportUtil.class
+com/demo/pages/HomePage.class
+utils/Constants.class
+utils/GenericUtils.class
+com/demo/pages/PaymentMethodPage.class
+utils/Driver.class

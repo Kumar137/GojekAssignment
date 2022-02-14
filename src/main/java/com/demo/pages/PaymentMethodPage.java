@@ -85,8 +85,6 @@ public class PaymentMethodPage {
     {
         utils.waitForElementPresent(PaynowBtn);
         Actions act=new Actions(driver);
-        // act.moveToElement(PaynowBtn).click().build().perform();
-        //   PaynowBtn.click();
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", PaynowBtn);
     }

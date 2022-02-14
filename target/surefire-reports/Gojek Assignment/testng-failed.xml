@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Gojek Assignment]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.test.CheckoutWithInvalidCard">
+        <methods>
+          <include name="endReporter"/>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+          <include name="startReporting"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.CheckoutWithInvalidCard -->
+      <class name="com.test.CheckoutWithValidCard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="checkoutWithValidCard"/>
+        </methods>
+      </class> <!-- com.test.CheckoutWithValidCard -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Gojek Assignment] -->

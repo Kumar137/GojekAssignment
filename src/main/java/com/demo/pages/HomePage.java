@@ -29,6 +29,9 @@ public class HomePage {
         BuyBtn.click();
     }
 
+    /*
+     *This function verifies the success message on Home page after successful order
+     */
     public boolean verifySuccessMessage()
     {
         Boolean bool=utils.waitForElementPresent(SuccessMsg);

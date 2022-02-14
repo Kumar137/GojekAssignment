@@ -27,22 +27,13 @@ public class OrderSummaryPage {
 
     public void clickContinueBtn()
     {
-      /*  try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
         int size = driver.findElements(By.tagName("iframe")).size();
         driver.switchTo().frame(0);
         System.out.println("---------------------"+size);
         Boolean bool= utils.waitForElementPresent(ContinueBtn);
         System.out.println("--------"+bool);
-
-        // Actions act=new Actions(driver);
-        // act.moveToElement(ContinueBtn).click().build().perform();
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", ContinueBtn);
-        //  ContinueBtn.click();
     }
 
     public String getCartItemName()
