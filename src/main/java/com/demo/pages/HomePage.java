@@ -25,6 +25,7 @@ public class HomePage {
 
     public void clickBuyBtn()
     {
+        //Test Demo
         utils.waitForElementPresent(BuyBtn);
         BuyBtn.click();
     }
