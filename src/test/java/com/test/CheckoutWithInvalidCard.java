@@ -20,6 +20,7 @@ public class CheckoutWithInvalidCard extends BaseClass {
     {
         logger=report.createTest("checkoutWithInvalidCard");
         homePage.clickBuyBtn();
+        //This is test
         shoppingCartPage.checkout();
         orderSummaryPage.clickContinueBtn();
         paymentMethodPage.selectCreditCard();
